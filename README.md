@@ -19,7 +19,7 @@ To use Simple Weather, follow these steps:
 * Insert your API key 
 * Run index.html
 
-## Contributing to KDEConnect-commands
+## Contributing to Simple Weather
 To contribute to simple-weather, follow these steps:
 
 1. Fork this repository.
