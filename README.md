@@ -7,6 +7,9 @@
 
 This is a simple weather JavaScript app that uses the [OpenWeather API](https://openweathermap.org/api).
 
+## Screenshot
+![screenshot](./screenshot.png)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
