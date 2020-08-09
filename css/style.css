@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  /* background-size: cover; */
+  background: no-repeat center center cover;
+}
+
+body, button {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#main-tile {
+  margin: auto;
+}
+
+.image {
+  margin: auto;
+}
+
+.panel-block {
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+
+.label {
+  color: white;
+}
+
+.modal-card-title {
+  color: white;
+}
+
+.modal-card-head {
+  background-color: #3298dc;
+}
+.modal-card-body {
+  background-color: #3298dc;
+}
+
+.modal-card-foot {
+  background-color: #3298dc;
+}

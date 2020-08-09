@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="container has-text-centered">
+      <div class="tile is-ancestor">
+        <div id="main-tile" class="tile is-parent is-6">
+          <div class="tile is-child notification is-info">
+            <div id="alert"></div>
+            <p id="w-location" class="title"></p>
+            <p id="w-main" class="subtitle mb-1"></p>
+            <p id="w-temperature" class="subtitle mb-1"></p>
+            <figure class="image is-128x128">
+              <img id="w-icon" src="" alt="weather-icon">
+            </figure>
+            <div class="panel">
+              <p id="w-feels-like" class="panel-block"></p>
+              <p id="w-humidity" class="panel-block"></p>
+              <p id="w-description" class="panel-block"></p>
+              <p id="w-wind" class="panel-block"></p>
+            </div>
+            <!-- Modal button  -->
+            <button id="btn-show-modal" class="button is-white modal-button" data-target="#location-modal" aria-haspopup="true">Change Location</button>
+          </div>
+        </div>
+      </div>
+      <!-- Modal  -->
+      <div id="location-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Choose Location</p>
+          </header>
+          <section class="modal-card-body">
+            <div id="modal-alert">teste</div>
+            <div class="field">
+              <label for="city" class="label">City</label>
+              <div class="control">
+                <input id="city" class="input" type="text" placeholder="City">
+              </div>
+              <br>
+              <label for="country" class="label">Country Code</label>
+              <div class="control">
+                <input id="country" class="input" type="text" placeholder="Country">
+              </div>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button id="btn-save-modal" class="button">Save changes</button>
+            <button id="btn-cancel-modal" class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/storage.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
